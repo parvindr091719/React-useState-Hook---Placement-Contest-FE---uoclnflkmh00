@@ -7,11 +7,11 @@ export default function App() {
  const [input, setInput] = useState("");
  const [term, setTerm] = useState("");
  
- cosnt handleChange=(e)=>{
+ const handleChange=(e)=>{
   setInput(e.target.value);
  }
  
- cosnt handleSubmit=(e)=>{
+ const handleSubmit=(e)=>{
  e.preventDefault();
  setTerm(term+input);
  setInput("")
